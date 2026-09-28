@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · netflix-auto-login</title>
+<style>
+  body { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7;
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: .9rem; }
+  a { color: #0645ad; }
+</style>
+</head>
+<body>
+<h1>개인정보처리방침</h1>
+<p class="updated">앱 이름: netflix-auto-login · 최종 수정일: 2026년 9월 28일</p>
+
+<h2>1. 앱 소개</h2>
+<p>netflix-auto-login은 개발자 본인의 개인 용도로 만든 자동화 도구입니다. 일반에 공개된 서비스가 아니며, 개발자 본인의 Google 계정 외의 사용자를 대상으로 하지 않습니다.</p>
+
+<h2>2. 접근하는 정보</h2>
+<p>이 앱은 Gmail API의 <code>gmail.modify</code> 권한을 사용합니다. 이 권한으로 다음 작업을 수행합니다.</p>
+<ul>
+  <li>넷플릭스(netflix.com)가 보낸 읽지 않은 최근 메일을 조회합니다.</li>
+  <li>해당 메일 본문에서 이용가구 확인 링크를 찾습니다.</li>
+  <li>처리를 마친 메일을 읽음 상태로 표시합니다.</li>
+</ul>
+<p>넷플릭스가 보낸 메일 외의 메일은 조회 대상에 포함되지 않습니다.</p>
+
+<h2>3. 정보의 저장과 이용</h2>
+<p>메일 본문과 제목을 포함한 어떠한 메일 내용도 저장하지 않습니다. 메일은 메모리에서 처리된 뒤 즉시 폐기됩니다.</p>
+<p>Google OAuth 토큰은 개발자 본인의 Google Cloud 프로젝트 내 Secret Manager에 저장되며, 해당 프로젝트의 Cloud Run 서비스만 접근할 수 있습니다.</p>
+
+<h2>4. 제3자 제공</h2>
+<p>이 앱은 수집한 어떠한 정보도 제3자에게 제공하거나 판매하지 않습니다. 광고 및 분석 도구를 사용하지 않습니다.</p>
+
+<h2>5. 데이터 보관 기간과 삭제</h2>
+<p>메일 내용은 보관하지 않습니다. OAuth 토큰은 사용자가 권한을 철회하면 무효가 되며, 다음 주소에서 언제든 철회할 수 있습니다.</p>
+<p><a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a></p>
+
+<h2>6. 문의</h2>
+<p>kudongku@gmail.com</p>
+</body>
+</html>
